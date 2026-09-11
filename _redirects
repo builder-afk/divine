@@ -1,0 +1,5 @@
+# Netlify & Cloudflare Pages Redirects / Rewrites
+/products/:id                           /product.html?id=:id    200
+/products/:id/                          /product.html?id=:id    200
+/collections/:collection/products/:id   /product.html?id=:id    200
+/collections/:collection/products/:id/  /product.html?id=:id    200

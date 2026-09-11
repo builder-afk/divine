@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Divine Collection by Verma Jewellers</title>
+  <meta name="description" content="The page you are looking for may have moved or is unavailable. Discover our handcrafted 22KT gold Divine Collection by Verma Jewellers.">
+  <link rel="icon" type="image/png" href="verma_logo.png">
+
+  <!-- Smart Client-Side Router for Static Hosting Fallbacks -->
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      // Check if path contains a product handle
+      var match = path.match(/(?:products\/|product\/|products\/[^/]+\/)?([a-zA-Z0-9_-]+)(?:\/|\.html)?$/);
+      if (match && match[1] && match[1] !== '404' && match[1] !== 'index' && match[1] !== 'product') {
+        var handle = match[1];
+        // Redirect seamlessly
+        window.location.replace("product.html?id=" + encodeURIComponent(handle));
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..600;1,400..600&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+
+  <style>
+    .vj-404-container {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .vj-404-badge {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--vj-caramel);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .vj-404-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 600;
+      color: var(--vj-charcoal);
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+    .vj-404-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #666;
+      margin-bottom: 34px;
+      max-width: 540px;
+    }
+    .vj-404-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+    }
+    .vj-btn-primary {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--vj-caramel);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .vj-btn-primary:hover {
+      background: #8e6231;
+      transform: translateY(-1px);
+    }
+    .vj-btn-outline {
+      display: inline-block;
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--vj-charcoal);
+      border: 1px solid var(--vj-charcoal);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+    .vj-btn-outline:hover {
+      background: #f0ebe2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="vj-topbar">
+    <div class="vj-topbar-track">
+      <div class="vj-topbar-item">Special: Discount on Our Divine Collection! Use Code: DIVINEOFFER</div>
+      <span class="vj-topbar-sep">|</span>
+      <div class="vj-topbar-item">100% BIS Hallmarked Gold Jewellery</div>
+      <span class="vj-topbar-sep">|</span>
+      <div class="vj-topbar-item">First Purchase Offer | Use Code : FIRST</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="vj-header">
+    <div class="vj-header-inner">
+      <div class="vj-header-logo">
+        <a href="index.html">
+          <img src="verma_logo.png" alt="Verma Jewellers">
+        </a>
+      </div>
+
+      <nav class="vj-header-nav">
+        <a href="index.html" class="vj-nav-link">Home</a>
+        <a href="index.html" class="vj-nav-link">Shop ▾</a>
+        <a href="index.html" class="vj-nav-link" style="color: var(--vj-caramel); font-weight: 500;">Divine</a>
+        <a href="index.html" class="vj-nav-link">About Us</a>
+        <a href="index.html" class="vj-nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 404 Hero Content -->
+  <main class="vj-404-container">
+    <span class="vj-404-badge">Notice 404</span>
+    <h1 class="vj-404-title">The Sacred Piece You Seek<br>Has Found A New Home</h1>
+    <p class="vj-404-desc">
+      The piece or destination you were looking for could not be found. Let our master jewellers guide you back to our divine creations in 22KT gold and spiritual gems.
+    </p>
+    <div class="vj-404-actions">
+      <a href="index.html" class="vj-btn-primary">Return to Divine Collection</a>
+      <a href="https://api.whatsapp.com/send?phone=919825123456&text=Hello%20Verma%20Jewellers%2C%20I%20am%20looking%20for%20a%20specific%20jewellery%20item." target="_blank" class="vj-btn-outline">WhatsApp Concierge</a>
+    </div>
+  </main>
+
+  <!-- Simple Brand Footer -->
+  <footer style="text-align: center; padding: 40px 20px; border-top: 1px solid rgba(0,0,0,0.06); font-size: 13px; color: #777;">
+    <p>&copy; 2026 Verma Jewellers. Handcrafted with devotion.</p>
+  </footer>
+
+</body>
+</html>

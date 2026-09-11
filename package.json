@@ -4,9 +4,16 @@
   "description": "Divine Collection by Verma Jewellers",
   "scripts": {
     "dev": "python3 -m http.server 8000",
-    "start": "python3 -m http.server 8000"
+    "start": "python3 -m http.server 8000",
+    "build": "python3 scripts/verify_deployment.py",
+    "test": "python3 scripts/verify_deployment.py"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "jewellery",
+    "gold",
+    "verma-jewellers",
+    "divine-collection"
+  ],
+  "author": "Verma Jewellers",
   "license": "ISC"
 }
