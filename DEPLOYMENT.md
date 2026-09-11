@@ -17,9 +17,9 @@ This repository is optimized for zero-configuration, production-grade deployment
 3. Keep default settings:
    - **Framework Preset**: Other
    - **Build Command**: `npm run build`
-   - **Output Directory**: `./` (leave blank)
+   - **Output Directory**: `.` (configured automatically via `vercel.json`)
 4. Click **Deploy**.
-5. *Clean URLs and path rewrites (`/products/:handle` -> `product.html?id=:handle`) are handled automatically by `vercel.json`.*
+5. *Clean URLs, output directory (`.`), and path rewrites (`/products/:handle` -> `product.html?id=:handle`) are handled automatically by `vercel.json`.*
 
 ---
 
